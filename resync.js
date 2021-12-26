@@ -68,7 +68,7 @@ module.exports = function resync (rpc, indexd, callback) {
       if (err) return callback(err)
 
       // indexd is behind
-      debug('bitcoind is ahead')
+      debug('unobtaniumd is ahead')
       connectBlock(rpc, indexd, common.nextblockhash, common.height + 1, callback)
     })
   })
