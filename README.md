@@ -2,7 +2,7 @@
 [![build status](https://secure.travis-ci.org/dcousens/indexd.png)](http://travis-ci.org/dcousens/indexd)
 [![Version](https://img.shields.io/npm/v/indexd.svg)](https://www.npmjs.org/package/indexd)
 
-An external [bitcoind](https://github.com/bitcoin/bitcoin) index management service.
+An external [unobtaniumd](https://github.com/unobtanium-official/Unobtanium) index management service.
 
 ## Indexes
 By default,  this module maintains script, spents, transaction block, txout and block indexes.
@@ -19,7 +19,7 @@ See the [example](#example) for usage.
 ## Example
 The [`example/`](https://github.com/bitcoinjs/indexd/tree/master/example) is a functioning [express](https://www.npmjs.com/package/express) REST HTTP API server.
 
-* Requires a running `bitcoind` node
+* Requires a running `unobtaniumd` node
 	* with `-txindex`, and
 	* ZMQ (`-zmqpubhashtx=tcp://127.0.0.1:30001 -zmqpubhashblock=tcp://127.0.0.1:30001`)
 * Assumes `--testnet` ports/configuration, see `example/.env` for configuration.
